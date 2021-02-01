@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+.container-element{
+    background-color: azure;
+}
+.title{
+    width:100% ;
+    height:max-content ;
+    font-size: 50px;
+    color: crimson;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1 rem;
+
+}
+.board{
+    margin-left: 15%;
+    margin-right:15%;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    display: grid;
+    background-color: #2196F3;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    padding-top:10px;
+    padding-left:45px ;
+    padding-bottom:10px ;
+
+}
+.coin-holder{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 60px;
+    width: 60px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin:5px;
+}
+.Option{
+    background-color: aquamarine;
+}
+#com:hover{
+    background-color: #f0ec18;
+}
+#hum:hover{
+    background-color: #f018d3;
+}
+
