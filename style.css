@@ -21,13 +21,17 @@
     margin-right:15%;
     flex-wrap: wrap;
     margin-top: 4%;
-    display: grid;
+    display: flex;
     background-color: #2196F3;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    flex-direction: column;
     padding-top:10px;
     padding-left:45px ;
     padding-bottom:10px ;
 
+}
+.board-row{
+    flex-direction: row;
+    width: fit-content;
 }
 .coin-holder{
     background-color: rgba(255, 255, 255, 0.8);

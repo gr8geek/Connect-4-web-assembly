@@ -8,11 +8,18 @@ document.addEventListener("DOMContentLoaded",(event)=>{
     var GameState = []
     var FilledCol = [5,5,5,5,5,5,5]
     var board = document.getElementsByClassName("board")[0]
-    for(var i=0;i<42;i++){
-        var newEle = document.createElement("div")
-        newEle.classList.add("coin-holder")
-        newEle.id = i.toString();
-        board.appendChild(newEle);
+    var elemCoun = 0;
+    for(var i=0;i<6;i++){
+        var newRow = document.createElement("div")
+        newRow.classList.add("board-row")
+        for(var j=0;j<7;j++){
+            var newEle = document.createElement("div")
+            newEle.classList.add("coin-holder")
+            newEle.id = (elemCoun++).toString();
+            newRow.appendChild(newEle)
+        }
+        board.appendChild(newRow);
+
         
     }
     var alreadyFilled = []
